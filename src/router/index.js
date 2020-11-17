@@ -56,6 +56,28 @@ export const constantRoutes = [
   },
 
   {
+    path: '/plantlib',
+    component: Layout,
+    redirect: '/plantlib/plantdata',
+    children: [{
+      path: 'plantdata',
+      name: 'plantData',
+      component: () => import('@/views/plantLib/plantData/index'),
+      meta: { title: '植物库' }
+    }, {
+      path: 'identifybasis',
+      name: 'identifyBasis',
+      component: () => import('@/views/plantLib/identifyBasis/index'),
+      meta: { title: '植物识别基础' }
+    }, {
+      path: 'plantknowledgeskills',
+      name: 'plantKnowledgeSkills',
+      component: () => import('@/views/plantLib/plantKnowledgeSkills/index'),
+      meta: { title: '辅助野外生存的植物知识与技巧' }
+    }]
+  },
+
+  {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
