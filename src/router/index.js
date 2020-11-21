@@ -58,19 +58,34 @@ export const constantRoutes = [
   {
     path: '/plantlib',
     component: Layout,
-    redirect: '/plantlib/list',
+    redirect: '/plantlib/index',
     name: 'plantlib',
     meta: { title: '植物库', icon: 'el-icon-s-help' },
     children: [{
-      path: 'list',
-      name: 'plantList',
+      path: 'index',
+      name: 'plantIndex',
+      redirect: '/plantlib/index/list',
       component: () => import('@/views/plantLib/plantData/index'),
       meta: { title: '植物列表' },
       children: [{
+        path: 'list',
+        name: 'plantList',
+        component: () => import('@/views/plantLib/plantData/list'),
+        // meta: { title: '植物列表' },
+        hidden: true,
+        alwaysShow: true
+      }, {
         path: 'add',
         name: 'plantAdd',
         component: () => import('@/views/plantLib/plantData/add'),
         meta: { title: '新增植物' },
+        hidden: true,
+        alwaysShow: true
+      }, {
+        path: 'detail',
+        name: 'plantDetail',
+        component: () => import('@/views/plantLib/plantData/detail'),
+        meta: { title: '植物详情' },
         hidden: true,
         alwaysShow: true
       }]

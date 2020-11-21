@@ -83,23 +83,171 @@
       <el-tab-pane label="图片" name="second">
         <el-row :gutter="20">
           <el-col :span="6">
-            <el-upload
-              class="upload-demo"
-              action="https://jsonplaceholder.typicode.com/posts/"
-              :on-preview="handlePreview"
-              :on-remove="(file, fileList) => handleRemove(file, fileList)"
-              :file-list="fileList"
-              list-type="picture"
-            >
-              <el-button size="small" type="primary">点击上传</el-button>
-              <div slot="tip" class="el-upload__tip">
-                只能上传jpg/png文件，且不超过500kb
-              </div>
-            </el-upload>
+            <el-card class="box-card" header="生境">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
           </el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-          <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="全株">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="根">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="茎">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+        </el-row>
+        <el-row :gutter="20">
+          <el-col :span="6">
+            <el-card class="box-card" header="叶">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="花">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="果实">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+          <el-col :span="6">
+            <el-card class="box-card" header="种子">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
+        </el-row>
+        <el-row :gutter="20">
+          <el-col :span="6">
+            <el-card class="box-card" header="手绘图">
+              <el-upload
+                class="upload-demo"
+                action="https://jsonplaceholder.typicode.com/posts/"
+                :on-preview="handlePreview"
+                :on-remove="(file, fileList) => handleRemove(file, fileList)"
+                :file-list="fileList"
+                list-type="picture"
+                :limit="1"
+              >
+                <el-button size="small" type="primary">点击上传</el-button>
+                <div slot="tip" class="el-upload__tip">
+                  只能上传jpg/png文件，且不超过500kb
+                </div>
+              </el-upload>
+            </el-card>
+          </el-col>
         </el-row>
       </el-tab-pane>
     </el-tabs>
@@ -111,7 +259,13 @@ export default {
   data() {
     return {
       activeName: "first",
-      fileList: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}],
+      fileList: [
+        {
+          name: "food.jpeg",
+          url:
+            "https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100",
+        },
+      ],
       ruleForm: {
         name: "",
         region: "",
@@ -185,5 +339,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 </style>
