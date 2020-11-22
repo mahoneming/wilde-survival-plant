@@ -73,32 +73,71 @@ export const constantRoutes = [
         component: () => import('@/views/plantLib/plantData/list'),
         // meta: { title: '植物列表' },
         hidden: true,
-        alwaysShow: true
+        // alwaysShow: true
       }, {
         path: 'add',
         name: 'plantAdd',
         component: () => import('@/views/plantLib/plantData/add'),
         meta: { title: '新增植物' },
         hidden: true,
-        alwaysShow: true
+        // alwaysShow: true
       }, {
         path: 'detail',
         name: 'plantDetail',
         component: () => import('@/views/plantLib/plantData/detail'),
         meta: { title: '植物详情' },
         hidden: true,
-        alwaysShow: true
+        // alwaysShow: true
       }]
     }, {
       path: 'identifybasis',
       name: 'identifyBasis',
       component: () => import('@/views/plantLib/identifyBasis/index'),
-      meta: { title: '植物识别基础' }
+      meta: { title: '植物识别基础' },
+      redirect: '/plantlib/identifybasis/list',
+      children: [{
+        path: 'list',
+        name: 'identifybasisList',
+        component: () => import('@/views/plantLib/identifyBasis/list'),
+        meta: { title: '列表' },
+        hidden: true,
+        // alwaysShow: true
+      }, {
+        path: 'detail',
+        name: 'identifybasisDetail',
+        component: () => import('@/views/plantLib/identifyBasis/detail'),
+        meta: { title: '详情' },
+        hidden: true,
+        // alwaysShow: true
+      }]
     }, {
       path: 'plantknowledgeskills',
       name: 'plantKnowledgeSkills',
       component: () => import('@/views/plantLib/plantKnowledgeSkills/index'),
-      meta: { title: '辅助野外生存的植物知识与技巧' }
+      meta: { title: '辅助野外生存的植物知识与技巧' },
+      redirect: '/plantlib/plantKnowledgeSkills/menu',
+      children: [{
+        path: 'menu',
+        name: 'plantKnowledgeSkillsMenu',
+        component: () => import('@/views/plantLib/plantKnowledgeSkills/menu'),
+        meta: { title: '菜单' },
+        hidden: true,
+        // alwaysShow: true
+      }, {
+        path: 'list/:id',
+        name: 'plantKnowledgeSkillsList',
+        component: () => import('@/views/plantLib/plantKnowledgeSkills/list'),
+        meta: { title: '列表' },
+        hidden: true,
+        // alwaysShow: true
+      }, {
+        path: 'list/:id/detail',
+        name: 'plantKnowledgeSkillsDetail',
+        component: () => import('@/views/plantLib/plantKnowledgeSkills/detail'),
+        meta: { title: '详情' },
+        hidden: true,
+        // alwaysShow: true
+      }]
     }]
   },
 

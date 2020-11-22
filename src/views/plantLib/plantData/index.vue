@@ -8,17 +8,9 @@
 export default {
   data() {
     return {
-      tableData: [],
-      formInline: {
-        user: "",
-        region: "",
-      },
     };
   },
   methods: {
-    onSubmit() {
-      console.log("submit!");
-    },
   },
 };
 </script>
